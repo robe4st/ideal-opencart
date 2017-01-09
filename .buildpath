@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="tests/phpcs/OpenCart/Sniffs/Spacing"/>
+	<buildpathentry kind="src" path="tests/phpcs/OpenCart/Sniffs/Variables"/>
+	<buildpathentry kind="src" path="tests/phpunit"/>
+	<buildpathentry kind="src" path="tests/setup"/>
+	<buildpathentry kind="src" path="upload"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

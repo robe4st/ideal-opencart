@@ -1,0 +1,27 @@
+2017-01-04 2:41:20 - TargetPay start payment failed: TargetPay antwoordde: 903 No TargetPay layoutcode was entered in the plugin. Check the installation instructions on www.idealplugins.nl
+2017-01-04 10:52:54 - PHP Notice:  Use of undefined constant TARGETPAY_PREFIX - assumed 'TARGETPAY_PREFIX' in /var/www/opencart/upload/admin/model/extension/payment/sofort.php on line 20
+2017-01-04 10:53:44 - PHP Warning:  require_once(system/helper/targetpay.class.php): failed to open stream: No such file or directory in /var/www/opencart/upload/admin/model/extension/payment/sofort.php on line 2
+2017-01-05 4:10:27 - PHP Warning:  require_once(system/helper/targetpay.class.php): failed to open stream: No such file or directory in /var/www/opencart/upload/admin/controller/extension/payment/sofort.php on line 14
+2017-01-05 7:48:11 - PHP Notice:  Error: Could not load template /var/www/opencart/upload/catalog/view/theme/default/template/default/template/extension/payment/sofort.tpl! in /var/www/opencart/upload/system/library/template/php.php on line 23
+2017-01-05 8:01:38 - PHP Notice:  Error: Could not load template /var/www/opencart/upload/catalog/view/theme/default/template/default/template/extension/payment/sofort.tpl! in /var/www/opencart/upload/system/library/template/php.php on line 23
+2017-01-05 8:08:37 - PHP Notice:  Error: Could not load template /var/www/opencart/upload/catalog/view/theme/default/template//template/extension/payment/sofort.tpl! in /var/www/opencart/upload/system/library/template/php.php on line 23
+2017-01-05 8:20:09 - PHP Notice:  Undefined variable: bank in /var/www/opencart/upload/catalog/view/theme/default/template/extension/payment/sofort.tpl on line 26
+2017-01-05 8:20:09 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/opencart/upload/catalog/view/theme/default/template/extension/payment/sofort.tpl on line 26
+2017-01-05 8:36:57 - PHP Notice:  Undefined variable: code in /var/www/opencart/upload/admin/model/extension/payment/sofort.php on line 22
+2017-01-05 10:53:13 - PHP Notice:  Undefined index: count in /var/www/opencart/upload/admin/model/extension/payment/sofort.php on line 59
+2017-01-06 6:32:33 - PHP Warning:  require_once(system/helper/targetpay.class.php): failed to open stream: No such file or directory in /var/www/opencart/upload/admin/controller/extension/payment/paysafecard.php on line 14
+2017-01-06 7:45:00 - PHP Notice:  Error: Could not load template /var/www/opencart/upload/catalog/view/theme/default/template//template/extension/payment/mrcash.tpl! in /var/www/opencart/upload/system/library/template/php.php on line 23
+2017-01-06 7:56:09 - TargetPay callback(), no order_id passed
+2017-01-06 7:56:22 - TargetPay callback(), no order_id passed
+2017-01-06 7:57:05 - TargetPay tp_callback(), no order_id passed
+2017-01-06 7:57:08 - TargetPay tp_callback(), no order_id passed
+2017-01-06 8:01:47 - TargetPay tp_callback(), no order_id passed
+2017-01-06 8:04:06 - PHP Notice:  Undefined index: trxid in /var/www/opencart/upload/catalog/controller/extension/payment/tp_callback.php on line 58
+2017-01-06 8:06:57 - PHP Notice:  Undefined index: trxid in /var/www/opencart/upload/catalog/controller/extension/payment/tp_callback.php on line 58
+2017-01-06 8:06:57 - PHP Notice:  Undefined offset: 0 in /var/www/opencart/upload/catalog/controller/extension/payment/tp_callback.php on line 97
+2017-01-06 8:10:51 - Could not find TargetPay transaction data for order_id=54
+2017-01-06 8:10:53 - Could not find TargetPay transaction data for order_id=54
+2017-01-06 9:28:52 - TargetPay start payment failed: TargetPay antwoordde: 903 No TargetPay layoutcode was entered in the plugin. Check the installation instructions on www.idealplugins.nl
+2017-01-06 9:32:04 - TargetPay tp_callback(), no order_id passed
+2017-01-06 9:32:14 - TargetPay tp_callback(), no order_id passed
+2017-01-06 9:32:50 - Could not find TargetPay transaction data for order_id=8
