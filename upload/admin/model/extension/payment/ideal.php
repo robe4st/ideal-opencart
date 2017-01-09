@@ -19,26 +19,21 @@ class ModelExtensionPaymentIdeal extends Model
     
     public function createTable()
     {
-        $table = DB_PREFIX . TargetPayCore::TARGETPAY_PREFIX . $this->methodName;
-    
-        $sql = "CREATE TABLE IF NOT EXISTS `" . $table . "` (
-        `order_id` VARCHAR(64) DEFAULT NULL,
-        `method` VARCHAR(6) DEFAULT NULL,
-        `{$this->methodName}_txid` VARCHAR(64) DEFAULT NULL,
-        `{$this->methodName}_response` VARCHAR(128) DEFAULT NULL,
-        `paid` DATETIME DEFAULT NULL,
-        PRIMARY KEY (`order_id`, `{$this->methodName}_txid`))";
-    
-        $result = $this->db->query($sql);
+        $this->db->query(TargetPayCore::getCreateTableQuery($this));
         // check if new version of this plugin is installed and used or not
-        $data = $this->db->query("select order_id from $table");
-    
+        $data = $this->db->query(TargetPayCore::getNewVersionDataQuery($this));
+        
         if ($data->num_rows == 0) {
             $oldTable = DB_PREFIX . $this->methodName;
             $newTable = DB_PREFIX . TargetPayCore::TARGETPAY_PREFIX . $this->methodName;
-    
+        
             $this->migrateTable($oldTable, $newTable);
         }
+    }
+    
+    public function getMethodName()
+    {
+        return $this->methodName;
     }
     
     /**
