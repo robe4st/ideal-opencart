@@ -585,4 +585,9 @@ class TargetPayCore
         
         return $sql;
     }
+    
+    public static function getOldTableCheckQuery($method)
+    {
+        return "SHOW TABLES LIKE 'oc_{$method->getMethodName()}'";
+    }
 }
