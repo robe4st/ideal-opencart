@@ -588,6 +588,6 @@ class TargetPayCore
     
     public static function getOldTableCheckQuery($method)
     {
-        return "SHOW TABLES LIKE " . DB_PREFIX . "'_{$method->getMethodName()}'";
+        return "SHOW TABLES LIKE '" . DB_PREFIX . "{$method->getMethodName()}'";
     }
 }

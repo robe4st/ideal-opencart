@@ -14,10 +14,10 @@ path6="./upload/admin/language/nl-nl/extension/payment/$i.php";
 path7="./upload/admin/language/en-gb/extension/payment/$i.php";
 path8="./upload/catalog/language/nl-nl/extension/payment/$i.php";
 path9="./upload/catalog/language/en-gb/extension/payment/$i.php";
+#images
+path10="./upload/admin/view/image/payment/$i.png";
 
-
-
-zip -r opencart_2.4.zip $path0 $path1 $path2 $path3 $path4 $path5 $path6 $path7 $path8 $path9
+zip -r opencart_2.4.zip $path0 $path1 $path2 $path3 $path4 $path5 $path6 $path7 $path8 $path9 $path10
 
 done
 
@@ -25,5 +25,7 @@ done
 
 path=upload/catalog/controller/extension/payment/tp_callback.php
 path2=upload/system/helper/targetpay.class.php
+path3=upload/admin/view/image/payment/visamc.png
+path4=upload/catalog/view/theme/default/image/loading.gif
 
-zip -r opencart_2.4.zip $path $path2
+zip -r opencart_2.4.zip $path $path2 $path3 $path4

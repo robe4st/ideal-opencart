@@ -11,6 +11,8 @@
  * @author        Yellow Melon B.V. / www.idealplugins.nl
  *
  */
+require_once ("../system/helper/targetpay.class.php");
+
 class ModelExtensionPaymentPaysafecard extends Model
 {
     private $methodName = "paysafecard";
@@ -46,7 +48,7 @@ class ModelExtensionPaymentPaysafecard extends Model
         $sqlCheckForMethodInstalled = 'select extension_id from ' . DB_PREFIX .
                 'extension where type="payment" and code="' . $this->methodName . '" limit 1';
         
-        $findOldTableSql = TargetPayCore::getOldTableCheckQuery();
+        $findOldTableSql = TargetPayCore::getOldTableCheckQuery($this);
         
         $tableFound = $this->db->query($findOldTableSql);
         $installed = $this->db->query($sqlCheckForMethodInstalled);
@@ -68,5 +70,4 @@ class ModelExtensionPaymentPaysafecard extends Model
             }
         }
     }
-
 }

@@ -50,7 +50,7 @@ class ModelExtensionPaymentIdeal extends Model
             'extension where type="payment" and code="' .
             $this->methodName . '" limit 1';
     
-        $findOldTableSql = TargetPayCore::getOldTableCheckQuery();
+        $findOldTableSql = TargetPayCore::getOldTableCheckQuery($this);
     
         $tableFound = $this->db->query($findOldTableSql);
         $installed = $this->db->query($sqlCheckForMethodInstalled);
