@@ -34,7 +34,6 @@ class ControllerExtensionPaymentPaybyinvoice extends Controller
             $this->log->write("Het bedrag is te hoog, maximaal 1000 euro");
             $json['error'] = "Amount too large, max. 1000 euro";
         } else {
-
             $targetPay = new TargetPayCore ("AFT", $rtlo, "e59dbd219e068daade7139be42c5dfd5",
                 $order_info['language_code'], false);
             $targetPay->setAmount(round($order_info['total'] * 100));

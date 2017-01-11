@@ -41,8 +41,8 @@ class ModelExtensionPaymentMrcash extends Model
      * Need to check for existing extension first then only migrate if the old
      * table exist or match the naming style from the previous plugin version.
      *
-     * @param string $oldTable            
-     * @param string $newTable            
+     * @param string $oldTable
+     * @param string $newTable
      */
     
     private function migrateTable($oldTable, $newTable)

@@ -15,11 +15,11 @@ require_once ("system/helper/targetpay.class.php");
 class ControllerExtensionPaymentTPCallback extends Controller
 {
     /**
-     * 
+     *
      * Handle payment result from report url
      * @param string $payment_type
      * @param number $order_id
-     * 
+     *
      * example usage: $targetPay->setReportUrl(
      * $this->url->link('extension/payment/tp_callback/report', array('order_id=' . $this->session->data['order_id'], 'payment_type=IDE'), 'SSL')
      * );

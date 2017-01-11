@@ -2,13 +2,13 @@
 
 /**
  *
- *	iDEALplugins.nl
+ *  iDEALplugins.nl
  *  TargetPay plugin for Opencart 2.0+
  *
  *  (C) Copyright Yellow Melon 2014
  *
- *	@file 		TargetPay Admin Controller
- *	@author		Yellow Melon B.V. / www.mrcashplugins.nl
+ *  @file    TargetPay Admin Controller
+ *  @author  Yellow Melon B.V. / www.mrcashplugins.nl
  *
  */
 require_once("../system/helper/targetpay.class.php");
@@ -216,7 +216,6 @@ class ControllerExtensionPaymentCreditcard extends Controller
         
         if (! $this->request->post['creditcard_rtlo'] ||
             $this->request->post['creditcard_rtlo'] == TargetPayCore::DEFAULT_RTLO) {
-                
             $this->error['rtlo'] = $this->language->get('error_rtlo');
         }
         

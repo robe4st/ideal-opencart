@@ -2,13 +2,13 @@
 
 /**
  *
- *	iDEALplugins.nl
+ *  iDEALplugins.nl
  *  TargetPay plugin for Opencart 2.0+
  *
  *  (C) Copyright Yellow Melon 2014
  *
- *	@file 		TargetPay Catalog Model
- *	@author		Yellow Melon B.V. / www.idealplugins.nl
+ *  @file    TargetPay Catalog Model
+ *  @author  Yellow Melon B.V. / www.idealplugins.nl
  *
  */
 require_once ("system/helper/targetpay.class.php");

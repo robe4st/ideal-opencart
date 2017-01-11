@@ -37,7 +37,7 @@ class ModelExtensionPaymentPaysafecard extends Model
     }
     
     /**
-     * Need to check for existing extension first then only migrate if the old 
+     * Need to check for existing extension first then only migrate if the old
      * table exist or match the naming style from the previous plugin version.
      *
      * @param string $oldTable
